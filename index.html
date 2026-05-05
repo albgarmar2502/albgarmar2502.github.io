@@ -3,53 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA y Datos para tu Negocio</title>
+    <title>Consultoría en IA y Datos</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-900 text-white font-sans selection:bg-blue-500 selection:text-white">
 
-    <!-- Hero Section -->
-    <header class="py-20 px-6 text-center bg-gradient-to-b from-slate-800 to-slate-900">
-        <h1 class="text-5xl font-bold mb-4">Tu negocio genera datos. <span class="text-blue-400">Yo los convierto en beneficios.</span></h1>
-        <p class="text-xl text-slate-300 max-w-2xl mx-auto">Optimización de procesos, ahorro de costes y auditoría de sesgos mediante IA adaptada al comercio local.</p>
-        <button class="mt-8 bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-full font-bold transition">Analizar mi negocio ahora</button>
+    <!-- Sección Introducción y Contacto -->
+    <header class="py-24 px-6 border-b border-slate-800 bg-gradient-to-b from-slate-800 to-slate-900">
+        <div class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+            <!-- Texto y Datos de Contacto -->
+            <div class="md:w-2/3 text-left">
+                <h1 class="text-5xl font-bold mb-2">Hola, soy <span class="text-blue-400">[Tu Nombre]</span></h1>
+                <h2 class="text-2xl text-slate-400 mb-6 font-light">Máster en Inteligencia Artificial e Ingeniería de Datos</h2>
+                <p class="text-lg text-slate-300 mb-8 max-w-xl">
+                    Ayudo a comercios y locales a convertir sus datos en beneficios reales. Optimizo procesos, automatizo tareas aburridas y audito sesgos para que tu negocio crezca de forma inteligente (y sin depender de chatbots impersonales).
+                </p>
+                
+                <!-- Caja de Contacto -->
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <!-- Teléfono -->
+                    <div class="flex items-center gap-3 text-slate-300 hover:text-white transition">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>+34 600 000 000</span>
+                    </div>
+                    <!-- Email -->
+                    <div class="flex items-center gap-3 text-slate-300 hover:text-white transition">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>tuemail@dominio.com</span>
+                    </div>
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/tu-enlace" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-blue-400 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>Mi LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Foto de Perfil -->
+            <div class="md:w-1/3">
+                <img src="mifoto.jpg" alt="Foto de Perfil" class="w-64 h-64 object-cover rounded-full mx-auto shadow-[0_0_40px_rgba(59,130,246,0.3)] border-4 border-slate-700">
+            </div>
+        </div>
     </header>
 
-    <!-- Sección 1: Automatización -->
-    <section class="py-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2 text-left">
-            <h2 class="text-3xl font-bold mb-4 text-blue-400">Dile adiós a la gestión manual</h2>
-            <p class="text-lg text-slate-300">Implemento sistemas que "leen" y categorizan tus facturas y tickets automáticamente. Ahorra horas semanales y elimina errores humanos.</p>
-        </div>
+    <!-- Sección: Automatización -->
+    <section class="py-20 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2">
             <img src="imagen1.png" alt="Automatización de Facturas" class="rounded-lg shadow-2xl border border-slate-700">
         </div>
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold mb-4 text-blue-400">Automatización de Procesos</h2>
+            <p class="text-lg text-slate-300 mb-6">
+                Implemento sistemas de lectura automática (Document AI) que extraen y categorizan la información de tus facturas y tickets térmicos. Olvídate de picar datos a mano, ahorra horas de administración y elimina errores humanos.
+            </p>
+            <!-- Botón Interactivo Automatización -->
+            <a href="ejemplo-automatizacion.html" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(37,99,235,0.4)]">
+                Ver caso práctico: La Farmacia
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
     </section>
 
-    <!-- Sección 2: Inteligencia de Datos -->
-    <section class="py-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
-        <div class="md:w-1/2 text-left">
-            <h2 class="text-3xl font-bold mb-4 text-purple-400">Decisiones basadas en realidades</h2>
-            <p class="text-lg text-slate-300">Utilizo algoritmos de predicción para que sepas qué stock comprar y cuáles son tus productos más rentables. Maximiza tu margen hoy.</p>
-        </div>
+    <!-- Sección: Inteligencia de Datos -->
+    <section class="py-20 px-6 max-w-5xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12 border-t border-slate-800">
         <div class="md:w-1/2">
             <img src="imagen2.png" alt="Inteligencia de Datos" class="rounded-lg shadow-2xl border border-slate-700">
         </div>
-    </section>
-
-    <!-- Sección 3: Ética y Sesgos -->
-    <section class="py-20 bg-slate-800 text-center px-6 mt-10">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-6 text-emerald-400">IA Ética: Tu negocio, libre de prejuicios</h2>
-            <p class="text-xl italic text-slate-300">"Audito tus datos para detectar sesgos ocultos, asegurando que tus decisiones no excluyan a clientes potenciales por errores estadísticos."</p>
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold mb-4 text-purple-400">Inteligencia de Datos y Sesgos</h2>
+            <p class="text-lg text-slate-300 mb-6">
+                Tus datos históricos esconden el secreto de tu crecimiento. Analizo patrones para predecir la demanda, optimizar tu stock y auditar los sesgos ocultos que te hacen perder clientes sin que lo sepas.
+            </p>
+            <!-- Botón Interactivo Inteligencia de Datos -->
+            <a href="ejemplo-datos.html" class="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(147,51,234,0.4)]">
+                Ver caso práctico: Hostelería
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
         </div>
     </section>
 
-    <!-- Gancho Final -->
-    <footer class="py-20 text-center">
-        <h3 class="text-4xl font-bold mb-4">¡Y mucho más!</h3>
-        <p class="text-xl text-slate-400 mb-8">Te sorprendería saber la cantidad de gestiones que se pueden automatizar en tu negocio.</p>
-        <p class="text-sm text-slate-500">© 2026 - Consultoría de Datos e IA</p>
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 text-center">
+        <p class="text-slate-500">© 2026 - [Tu Nombre]. Transformando datos locales.</p>
     </footer>
 
 </body>
