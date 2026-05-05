@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Análisis Estratégico de Ventas - IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans p-10">
+    <div class="max-w-5xl mx-auto">
+        <header class="mb-10 border-b border-slate-700 pb-5">
+            <h1 class="text-3xl font-bold text-purple-400">Brújula de Ventas e Inteligencia de Cliente</h1>
+            <p class="text-slate-400">Identificación de patrones y oportunidades de crecimiento</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <!-- Gráfico Tendencia -->
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <h3 class="text-lg font-bold mb-4">Tendencia de Ventas (Semestral)</h3>
+                <canvas id="chartVentas"></canvas>
+            </div>
+            <!-- Gráfico Segmentos -->
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                <h3 class="text-lg font-bold mb-4">Segmentación de Clientes</h3>
+                <canvas id="chartSegmentos"></canvas>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-purple-900/20 p-6 rounded-xl border border-purple-500/30">
+                <p class="text-purple-400 font-bold mb-2">💡 Clientes VIP</p>
+                <p class="text-sm text-slate-300">El 15% de tus clientes (VIP) genera el 50% de tus ingresos. Recomendamos programa de fidelización exclusivo.</p>
+            </div>
+            <div class="bg-blue-900/20 p-6 rounded-xl border border-blue-500/30">
+                <p class="text-blue-400 font-bold mb-2">📈 Tendencia Detectada</p>
+                <p class="text-sm text-slate-300">Las ventas crecen un 20% los días de lluvia. Sugerimos ajustar stock de productos de conveniencia.</p>
+            </div>
+            <div class="bg-red-900/20 p-6 rounded-xl border border-red-500/30">
+                <p class="text-red-400 font-bold mb-2">⚖ Auditoría de problemas</p>
+                <p class="text-sm text-slate-300">Detectado problema de edad en el turno de tarde. Hay un grupo de +50 años que se ausenta y tiene un alto poder adquisitivo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Gráfico de Líneas
+        new Chart(document.getElementById('chartVentas'), {
+            type: 'line',
+            data: {
+                labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Ventas (€)',
+                    data: [12000, 15400, 13200, 18900, 21000, 19500],
+                    borderColor: '#a855f7',
+                    backgroundColor: 'rgba(168, 85, 247, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: { plugins: { legend: { display: false } }, scales: { y: { grid: { color: '#334155' } } } }
+        });
+
+        // Gráfico de Barras
+        new Chart(document.getElementById('chartSegmentos'), {
+            type: 'bar',
+            data: {
+                labels: ['VIP', 'Recurrente', 'Ocasional', 'En Riesgo', 'Nuevo'],
+                datasets: [{
+                    data: [15, 35, 25, 15, 10],
+                    backgroundColor: ['#a855f7', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']
+                }]
+            },
+            options: { plugins: { legend: { display: false } } }
+        });
+    </script>
+</body>
+</html>
